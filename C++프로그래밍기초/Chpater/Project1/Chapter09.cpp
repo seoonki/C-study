@@ -1,5 +1,4 @@
 // Section_01
-// 
 // 객체 포인터
 // 객체(class)의 주소를 가르키는 포인터
 // Complex x;
@@ -75,8 +74,12 @@ void main()
 
 
 
+
 // Section_04
 // 객체를 배열로도 사용할 수 있다.
+
+
+
 
 // Section_05
 // friend 함수

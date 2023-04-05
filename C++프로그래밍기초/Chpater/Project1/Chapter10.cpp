@@ -1,4 +1,9 @@
+// Section_02
 // 연산자 재정의
+// 그냥 연산자(+, -, ...)도 원래 함수고
+// 기본 자료형에만 정의되어 있어서
+// 만들어준 class에 대해서도 재정의(overloading) 해주는 것
+
 
 #include <iostream>
 
@@ -14,7 +19,7 @@ public:
 	Complex(int r = 0, int i = 0);
 	void ShowComplex();
 	
-	Complex operator+(const Complex rightHand) const;
+	Complex operator+(const Complex& rightHand) const;
 	Complex operator-(const Complex& rightHand) const;
 	Complex operator-() const;
 };
@@ -36,7 +41,7 @@ void Complex::ShowComplex()
 		cout << real << endl;
 }
 
-Complex Complex::operator+(const Complex rightHand) const
+Complex Complex::operator+(const Complex& rightHand) const
 {
 	Complex res;
 	res.real = this->real + rightHand.real;
