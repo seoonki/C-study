@@ -1,6 +1,6 @@
 // Call by value         // address --> value
 // Call by address     
-// Call by reference
+// Call by reference     // 기존 메모리에 새로운 이름 부여
 
 #include <iostream>
 
